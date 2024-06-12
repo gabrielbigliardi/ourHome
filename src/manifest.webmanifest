@@ -2,7 +2,7 @@
   "name": "Nosso Cantinho",
   "short_name": "422",
   "theme_color": "#EEF0F4",
-  "background_color": "#fafafa",
+  "background_color": "#EEF0F4",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
