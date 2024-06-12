@@ -1,0 +1,11 @@
+<section class="main">
+    <ul class="cart-list">
+        <!-- @for(item of visibleItems; track item.name){
+        <app-item [item]="item"></app-item>
+        } -->
+        @for(cartItem of cartService.cartSig(); track cartItem.id) {
+        <!-- <li>{{cartItem.name}}</li> -->
+        <app-item class="cart-item" [cartItem]="cartItem"></app-item>
+        }
+    </ul>
+</section>
