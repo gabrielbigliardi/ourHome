@@ -1,7 +1,7 @@
 {
   "name": "Nosso Cantinho",
   "short_name": "422",
-  "theme_color": "#1976d2",
+  "theme_color": "#EEF0F4",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
