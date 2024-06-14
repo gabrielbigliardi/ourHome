@@ -1,6 +1,6 @@
-export interface Prop {
-    name: string,
-    priority: string,
-    purchased: boolean,
+export interface PropItem {
+    name: string | null,
+    // priority: string,
+    // purchased: boolean,
     id: string
 }

@@ -6,12 +6,10 @@ import { PropComponent } from "../prop/prop.component";
     selector: 'app-house-props',
     standalone: true,
     templateUrl: 'props.component.html',
+    styleUrl: 'props.component.scss',
     imports: [PropComponent]
 })
-export class HouseItemsComponent implements OnInit {
+export class HouseItemsComponent {
     propsService = inject(PropsService)
 
-    ngOnInit(): void {
-        console.log(this.propsService.propsSig());
-    }
 }

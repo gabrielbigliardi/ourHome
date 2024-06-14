@@ -1,0 +1,28 @@
+.house {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+
+    select {
+        max-width: 7rem;
+    }
+}
+
+
+button {
+    color: #FDFDFD;
+    background-color: #AC485A;
+    border: 0;
+    width: 100%;
+    margin-block: 1rem;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+button:hover {
+    background-color: #432000;
+    cursor: pointer;
+}

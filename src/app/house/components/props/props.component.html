@@ -1,8 +1,9 @@
 <div>
     <ul>
-        @for(prop of propsService.propsSig(); track prop) {
+        @for(propItem of propsService.propsSig(); track propItem.id) {
         <!-- <app-house-prop [prop]="prop"></app-house-prop> -->
-        <li>{{prop.name}}</li>
+        <!-- <li>{{propItem.name}}</li> -->
+        <app-house-prop [propItem]="propItem"></app-house-prop>
         }
     </ul>
 </div>
