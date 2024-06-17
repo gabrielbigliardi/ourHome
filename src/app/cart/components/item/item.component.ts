@@ -26,7 +26,7 @@ export class ItemComponent implements OnChanges, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    console.log('item destroyed');
+    // console.log('item destroyed');
 
   }
 }

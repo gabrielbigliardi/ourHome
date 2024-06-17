@@ -9,11 +9,23 @@ export class PropsService {
     propsSig = signal<PropItem[]>([])
 
     // addProp(newProp: string, priority: string, purchased: boolean, newPropId: string): void {
-    addProp(newPropId: string, newProp: string): void {
+    // addProp(newProp: string, priority: string): void {
+    //     const newToAdd: PropItem = {
+    //         // id: newPropId,
+    //         id: 'idteste',
+    //         name: newProp,
+    //         priority: priority,
+    //         // purchased: purchased,
+    //     }
+    //     this.propsSig.update(prev => [...prev, newToAdd])
+    //     console.log('prop added');
+    // }
+
+    addProp(newPropId: string, newPropName: string, newPropPriority: string): void {
         const newToAdd: PropItem = {
             id: newPropId,
-            name: newProp,
-            // priority: priority,
+            name: newPropName,
+            priority: newPropPriority,
             // purchased: purchased,
         }
         this.propsSig.update(prev => [...prev, newToAdd])

@@ -1,15 +1,17 @@
 <div class="house">
-    <form [formGroup]="applyForm" (submit)="submitProp()">
-        <label for="prop"></label>
-        <input id="prop" type="text" formControlName="name" />
-        <!-- <select>
-            <option value="0">prioridade</option>
-            <option value="1">⭐</option>
-            <option value="2">⭐⭐</option>
-            <option value="3">⭐⭐⭐</option>
-            <option value="4">⭐⭐⭐⭐</option>
-            <option value="5">⭐⭐⭐⭐⭐</option>
-        </select> -->
+    <form [formGroup]="applyForm" #myForm="ngForm" (submit)="submitProp(); myForm.resetForm()">
+        <!-- <label for="prop"></label> -->
+        <div class="house-inputs">
+            <input type="text" formControlName="name" />
+            <select formControlName="priority">
+                <option value="0">-- sem prioridade --</option>
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+        </div>
         <button type="submit" id="add-button">Adicionar</button>
     </form>
 </div>

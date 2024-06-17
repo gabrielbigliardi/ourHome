@@ -9,10 +9,15 @@ import { PropsFirebaseService } from "../../services/propsFirebase.service";
     templateUrl: 'prop.component.html',
     styleUrl: 'prop.component.scss'
 })
-export class PropComponent {
+export class PropComponent implements OnInit {
     @Input({ required: true }) propItem!: PropItem;
     propsService = inject(PropsService)
     propsFirebaseService = inject(PropsFirebaseService)
+
+    ngOnInit(): void {
+        console.log("prop iniciado");
+
+    }
 
     removeProp(): void {
         this.propsFirebaseService.removeProp(this.propItem.id).subscribe(() => {

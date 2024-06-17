@@ -19,5 +19,7 @@ export class HouseComponent implements OnInit {
         this.propsFirebaseService.getProps().subscribe(props => {
             this.propsService.propsSig.set(props)
         })
+
+
     }
 }

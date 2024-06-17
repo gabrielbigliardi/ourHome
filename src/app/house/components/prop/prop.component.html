@@ -1,4 +1,26 @@
 <div class="item-container">
-    <li>{{propItem.name}}</li>
-    <h3 (click)="removeProp()">x</h3>
+    <h4>{{propItem.name}}</h4>
+    <div class="item-specs">
+        @switch (propItem.priority) {
+        @case ("1") {
+        <span>⭐</span>
+        }
+        @case ("2") {
+        <span>⭐⭐</span>
+        }
+        @case ("3") {
+        <span>⭐⭐⭐</span>
+        }
+        @case ("4") {
+        <span>⭐⭐⭐⭐</span>
+        }
+        @case ("5") {
+        <span>⭐⭐⭐⭐⭐</span>
+        }
+        @default {
+        <span>sem prioridade</span>
+        }
+        }
+        <h3 (click)="removeProp()">x</h3>
+    </div>
 </div>

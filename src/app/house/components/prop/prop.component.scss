@@ -1,9 +1,20 @@
 .item-container {
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-inline: 2rem;
+    padding-inline: 1.5rem;
     margin-block: .5rem;
+    border-radius: .5rem;
+}
+
+.item-specs {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    
+    span {
+        font-size: .75rem;
+    }
 }

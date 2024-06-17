@@ -13,15 +13,15 @@ export class PropsFirebaseService {
     propsCollection = collection(this.firestore, 'props')
 
     getProps(): Observable<PropItem[]> {
-        console.log("getting props");
+        // console.log("getting props");
 
         return collectionData(this.propsCollection, {
             idField: 'id'
         }) as Observable<PropItem[]>
     }
 
-    addProp(name: string): Observable<string> {
-        const propToCreate = { name }
+    addProp(name: string, priority: string): Observable<string> {
+        const propToCreate = { name, priority }
         const promise = addDoc(this.propsCollection, propToCreate).then(res => res.id)
         return from(promise)
     }
